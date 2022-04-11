@@ -13,7 +13,7 @@
 <footer class="bg-black <?php echo (is_front_page() ? 'mt6' : '');?>">
   <div class="w-90 w-80-xl center pv3 flex-l white fsize6">
     
-  <div class="footer__copyright"><span class="ff_black"><?php echo date('Y'); ?></span>&nbsp; – &nbsp;<?php echo get_bloginfo('title'); ?></div>
+  <div class="footer__copyright"><?php echo date('Y'); ?>&nbsp; – &nbsp;<?php echo get_bloginfo('title'); ?></div>
 
   <div class="footer__nav mr-auto-l">
       <?php

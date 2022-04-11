@@ -54,7 +54,7 @@
                         <?php } ?>
                     </div>
                     <div class="swiper-button--prev swiper-button dn db-l" id="creative__news__swiper_prev"><img src="<?php echo get_template_directory_uri(); ?>/assets/arrow-left.svg" alt="" title="Vorheriger Slide" width="47" height="30" /></div>
-                    <div class="swiper-button--next swiper-button dn db-l" id="creative__news__swiper_next"><img src="<?php echo get_template_directory_uri(); ?>/assets/arrow-right.svg" alt="" title="Nächster Slide" width="47" height="30" /></div>
+                    <div class="swiper-button--next swiper-button dn db-l" id="creative__news__swiper_next"><img src="<?php echo get_template_directory_uri(); ?>/assets/arrow-right-white.svg" alt="" title="Nächster Slide" width="47" height="30" /></div>
                 </div>
             </div>
         </section>

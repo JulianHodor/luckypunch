@@ -11,6 +11,12 @@ $post_type = get_field('post_type');
 ?>
 
 
+<?php if(has_post_thumbnail()) { ?>
+<figure class="w-100 ma0 pa0 aspect-ratio aspect-ratio--32x9">
+    <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'large', false, array('loading' => 'lazy', 'class' => 'db aspect-ratio--object object-fit--cover object-position--center', 'title' => get_the_title(get_post_thumbnail_id()))); ?>
+</figure>
+<?php } ?>
+
 <div class="border__filter--top w-100 bg-black pb4"> </div>
 
 <div class="board__header w-100 bg-black pt3">

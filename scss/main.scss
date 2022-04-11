@@ -243,16 +243,16 @@ button.bigmac {
       top: 20px;
     }
 
-    &:not(.active)::after {
-      content: "Navigation";
-      position: absolute;
-      @extend .db, .fsize6, .ff_black;
-      color: grey;
-      top: 0;
-      left: 60px;
-      height: 23px;
-      line-height: 23px;
-    }
+    // &:not(.active)::after {
+    //   content: "Navigation";
+    //   position: absolute;
+    //   @extend .db, .fsize6, .ff_black;
+    //   color: grey;
+    //   top: 0;
+    //   left: 60px;
+    //   height: 23px;
+    //   line-height: 23px;
+    // }
   
 }
 
@@ -526,7 +526,7 @@ fieldset {
         @extend .link;
     }
     & .breadcrumb_last {
-        color: grey;
+
     }
 }
 
@@ -945,4 +945,11 @@ details {
       }
     }
   }
+}
+
+
+// CUSTOM ASPECT RATIO
+
+.aspect-ratio--32x9 {
+  padding-bottom: 28.125%;
 }
