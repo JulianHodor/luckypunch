@@ -1,0 +1,56 @@
+$xs_breakpoint: 25em;
+$s_breakpoint: 30em;
+$l_breakpoint: 60em;
+$xl_breakpoint: 102em;
+
+@mixin breakpoint($class) {
+
+  @if $class == xs {
+    @media (min-width: $xs_breakpoint) { @content; }
+  }
+
+  @else if $class == ns {
+    @media (min-width: $s_breakpoint) { @content; }
+  }
+
+  @else if $class == m {
+    @media (min-width: $s_breakpoint) and (max-width: $l_breakpoint) { @content; }
+  }
+
+  @else if $class == l {
+    @media (min-width: $l_breakpoint) { @content; }
+  }
+
+  @else if $class == xl {
+    @media (min-width: $xl_breakpoint) { @content; }
+  }
+
+  @else {
+    @warn $class "not supported";
+  }
+
+}
+
+:root {
+  --current-breakpoint: 1;
+}
+
+
+@include breakpoint(l){
+
+  :root {
+    --current-breakpoint: 2;
+  }
+
+}
+
+@include breakpoint(xl){
+
+  :root {
+    --current-breakpoint: 3;
+  }
+
+}
+
+
+

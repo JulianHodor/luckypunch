@@ -1,0 +1,180 @@
+
+@font-face {
+    font-family:"Archivo Regular";
+    src:url("../f/import/Archivo-Regular.woff2") format("woff2"),url("../f/import/Archivo-Regular.woff") format("woff"),url("../f/import/Archivo-Regular.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+
+@font-face {
+    font-family:"Archivo Medium";
+    src:url("../f/import/Archivo-Medium.woff2") format("woff2"),url("../f/import/Archivo-Medium.woff") format("woff"),url("../f/import/Archivo-Medium.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        
+
+
+@font-face {
+    font-family:"Archivo SemiExpanded Black";
+    src:url("../f/import/Archivo_SemiExpanded-Black.woff2") format("woff2"),url("../f/import/Archivo_SemiExpanded-Black.woff") format("woff"),url("../f/import/Archivo_SemiExpanded-Black.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+$ff_regular: "Archivo Regular", Helvetica, Arial, sans-serif;
+
+.ff_regular {
+  font-family: $ff_regular;
+  font-weight: normal;
+}
+
+$ff_medium: "Archivo Medium", Helvetica, Arial, sans-serif;
+
+.ff_medium {
+  font-family: $ff_medium;
+  font-weight: normal;
+}
+
+$ff_black: "Archivo SemiExpanded Black", Helvetica, Arial, sans-serif;
+
+.ff_black {
+  font-family: $ff_black;
+  font-weight: normal;
+}
+        
+
+html {
+    font-size-adjust: 100%;
+    font-family: $ff_regular;
+    font-size: 16px;
+    @include breakpoint(l) {
+        font-size: 16px;
+    }
+    line-height: 1.6;
+  }
+  
+  body {
+    font-weight: normal;
+    font-kerning: normal;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing:antialiased;
+  }
+  
+
+
+h1,h2,h3,h4,h5 {
+    @extend .ff_black, .ttu;
+    line-height: 1;
+    letter-spacing: .05em;
+}
+
+.fsize1 {
+    font-size: 3.8rem;
+    @include breakpoint(l) {
+        font-size: 5.8rem;
+    }
+}
+
+// @media 
+// (min-device-pixel-ratio: 2), 
+// (min-resolution: 200dpi){ 
+//     .fsize1 {
+//         font-size: 5.8rem;
+//     }
+// }
+
+
+// @media
+//   screen and (-webkit-min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 5dppx) {
+
+//     .fsize1 {
+//         font-size: 5.8rem;
+//     }
+
+// }
+
+// @media (-webkit-min-device-pixel-ratio: 2.5) {
+//     .fsize1 {
+//         font-size: 5.8rem;
+//         color: blue;
+//     }
+//   }
+
+
+.fsize2 {
+    font-size: 2.8rem;
+    @include breakpoint(l) {
+        font-size: 3.8rem;
+    }
+    @include breakpoint(xl) {
+        font-size: 4.2rem;
+    }
+}
+
+
+.fsize3 {
+    font-size: 1rem;
+    @include breakpoint(l) {
+        font-size: 1.8rem;
+        &--xl {
+            font-size: 2rem;
+        }
+    }
+    @include breakpoint(xl) {
+        font-size: 2.2rem;
+        &--xl {
+            font-size: 2.2rem;
+        }
+    }    
+
+}
+
+
+.fsize4 {
+    font-size: 1rem;
+    @include breakpoint(l) {
+        font-size: 1.8rem;
+    }
+    @include breakpoint(xl) {
+        font-size: 2.2rem;
+    }    
+}
+
+.fsize5 {
+    font-size: 1rem;
+}
+
+.fsize6 {
+    font-size: .8rem;
+}
+
+p, ul {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.wbreak {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+
+// MACBOOK
+// PPI	257.56 pixels per in
+// PPI2	66336.08 pixels per in2
+// Diagonal	3605.81 pixels
+// Dot Pitch	0.0986 mm
+// Total pixels	5,939,136 pixels, or
+// 5.94 Megapixels
+
+
+// HP ENVY 27
+// PPI	163.18 pixels per in
+// PPI2	26627.16 pixels per in2
+// Diagonal	4405.81 pixels
+// Dot Pitch	0.1557 mm
+// Total pixels	8,294,400 pixels, or
+// 8.29 Megapixels
